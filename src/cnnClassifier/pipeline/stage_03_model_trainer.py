@@ -8,6 +8,7 @@ STAGE_NAME = "Training"
 
 
 
+
 class ModelTrainingPipeline:
     def __init__(self):
         pass
@@ -29,6 +30,7 @@ if __name__ == '__main__':
         obj = ModelTrainingPipeline()
         obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+        
     except Exception as e:
         logger.exception(e)
         raise e

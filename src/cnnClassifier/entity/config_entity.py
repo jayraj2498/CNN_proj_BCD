@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+
 from pathlib import Path
 
 
@@ -8,6 +9,7 @@ class DataIngestionConfig:
     source_URL: str
     local_data_file: Path
     unzip_dir: Path
+
 
 
 
@@ -25,6 +27,7 @@ class PrepareBaseModelConfig:
 
 
 
+
 @dataclass(frozen=True)
 class TrainingConfig:
     root_dir: Path
@@ -35,6 +38,7 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+
 
 
 

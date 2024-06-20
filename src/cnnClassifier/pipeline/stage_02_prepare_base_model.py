@@ -10,6 +10,7 @@ STAGE_NAME = "Prepare base model"
 class PrepareBaseModelTrainingPipeline:
     def __init__(self):
         pass
+    
 
     def main(self):
         config = ConfigurationManager()
@@ -24,6 +25,7 @@ if __name__ == '__main__':
     try:
         logger.info(f"*******************")
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        
         obj = PrepareBaseModelTrainingPipeline()
         obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
