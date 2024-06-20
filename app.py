@@ -5,6 +5,7 @@ from cnnClassifier.utils.common import decodeImage
 from cnnClassifier.pipeline.prediction import PredictionPipeline
 
 
+
 os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
 
@@ -28,12 +29,14 @@ def home():
 
 
 
+
 @app.route("/train", methods=['GET','POST'])
 @cross_origin()
 def trainRoute():
     os.system("python main.py")
     # os.system("dvc repro")
     return "Training done successfully!"
+
 
 
 
