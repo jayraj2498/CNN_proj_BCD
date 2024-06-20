@@ -147,5 +147,10 @@ DVC
 
     AWS_ECR_LOGIN_URI = demo>>  56637416292.dkr.ecr.ap-south-1.amazonaws.com
 
-    ECR_REPOSITORY_NAME = simple-app
+    ECR_REPOSITORY_NAME = simple-app 
+
+
+# 8. result 
+![Screenshot 2024-06-20 142045](https://github.com/jayraj2498/CNN_proj_BCD/assets/113837064/23c249a1-a717-4cb7-87b6-365a332a6a14)
+	
 
