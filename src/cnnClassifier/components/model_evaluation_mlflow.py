@@ -1,3 +1,4 @@
+import pandas as pd 
 import tensorflow as tf
 from pathlib import Path
 import mlflow
@@ -67,7 +68,7 @@ class Evaluation:
 
                 # Register the model
                 # There are other ways to use the Model Registry, which depends on the use case,
-                # please refer to the doc for more information:
+                # please refer to the doc for more information to get :
                 # https://mlflow.org/docs/latest/model-registry.html#api-workflow
                 mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
             else:

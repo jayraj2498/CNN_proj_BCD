@@ -15,7 +15,7 @@ class DataIngestion:
      
     def download_file(self)-> str:
         '''
-        Fetch data from the url
+        Fetch the data from the url
         '''
 
         try: 
@@ -25,10 +25,10 @@ class DataIngestion:
             logger.info(f"Downloading data from {dataset_url} into file {zip_download_dir}")
 
             file_id = dataset_url.split("/")[-2]
-            prefix = 'https://drive.google.com/uc?/export=download&id='
+            prefix =   'https://drive.google.com/uc?/export=download&id='
             gdown.download(prefix+file_id,zip_download_dir)
 
-            logger.info(f"Downloaded data from {dataset_url} into file {zip_download_dir}")
+            logger.info(f"Downloaded data from the {dataset_url} into file the {zip_download_dir}")
 
         except Exception as e:
             raise e
@@ -37,12 +37,13 @@ class DataIngestion:
     def extract_zip_file(self):
         """
         zip_file_path: str
-        Extracts the zip file into the data directory
+        Extracts the zip file into the data directory .
         Function returns None
         """
-        unzip_path = self.config.unzip_dir
-        os.makedirs(unzip_path, exist_ok=True)
+        unzip_path_it = self.config.unzip_dir
+        os.makedirs(unzip_path_it, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
-            zip_ref.extractall(unzip_path)
+            
+            zip_ref.extractall(unzip_path_it)
 
 
