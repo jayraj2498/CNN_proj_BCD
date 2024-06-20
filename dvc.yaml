@@ -8,6 +8,8 @@ stages:
       - artifacts/data_ingestion/Chest-CT-Scan-data
 
 
+
+
   prepare_base_model:
     cmd: python src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
     deps:
@@ -37,6 +39,7 @@ stages:
       - AUGMENTATION
     outs:
       - artifacts/training/model.h5
+
 
 
   evaluation:
