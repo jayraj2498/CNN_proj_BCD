@@ -1,7 +1,7 @@
 # End-to-End-Chest-Cancer-Classification-using-MLflow-DVC 
 
 - This end-to-end deep learning project implements chest cancer classification using MLflow 
-- for experiment tracking and DVC for pipeline management. It integrates MLops tools, CICD deployment on AWS
+- for experiment tracking and DVC for pipeline management. It integrates MLops tools, CICD deployment AWS
 - and Azure, and a user-friendly web application for prediction.
 
 
@@ -21,11 +21,11 @@
 
 
 
+
 ## MLflow
 
 - [Documentation](https://mlflow.org/docs/latest/index.html)
 
-- [MLflow tutorial](https://youtube.com/playlist?list=PLkz_y24mlSJZrqiZ4_cLUiP0CBN5wFmTb&si=zEp_C8zLHt1DzWKK)
 
 ##### cmd
 - mlflow ui

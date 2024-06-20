@@ -26,9 +26,7 @@ list_of_files = [
     "research/trials.ipynb",
     "templates/index.html"
 
-
 ]
-
 
 
 
@@ -48,4 +46,4 @@ for filepath in list_of_files:
 
 
     else:
-        logging.info(f"{filename} is already exists")
+        logging.info(f"{filename} these file is already exists")
